@@ -1,0 +1,43 @@
+{
+  "name": "wing-snap-types",
+  "version": "1.0.0",
+  "description": "TypeScript declarations for Behringer WING .snap snapshot JSON",
+  "license": "MIT",
+  "author": "",
+  "keywords": [
+    "behringer",
+    "wing",
+    "digital-console",
+    "snapshot",
+    "typescript",
+    "types"
+  ],
+  "homepage": "https://github.com/yanuu1337/wing-snap-types#readme",
+  "bugs": {
+    "url": "https://github.com/yanuu1337/wing-snap-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanuu1337/wing-snap-types.git",
+    "directory": "packages/wing-snap-types"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

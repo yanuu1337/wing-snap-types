@@ -1,0 +1,50 @@
+{
+  "name": "@wing-snap-types/parser",
+  "version": "1.0.0",
+  "description": "Parse Behringer WING .snap files and browse them with ConsoleEngine / ConsoleIo wrappers",
+  "license": "MIT",
+  "type": "module",
+  "keywords": [
+    "behringer",
+    "wing",
+    "digital-console",
+    "snapshot",
+    "parser"
+  ],
+  "homepage": "https://github.com/yanuu1337/wing-snap-types#readme",
+  "bugs": {
+    "url": "https://github.com/yanuu1337/wing-snap-types/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanuu1337/wing-snap-types.git",
+    "directory": "packages/parser"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "wing-snap-types": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "wing-snap-types": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@wing-snap-types/workspace",
+  "private": true,
+  "description": "Monorepo: wing-snap-types declarations, @wing-snap-types/parser, @wing-snap-types/validation",
+  "license": "MIT",
+  "packageManager": "pnpm@9.9.0",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck"
+  },
+  "devDependencies": {
+    "@wing-snap-types/parser": "workspace:*",
+    "@wing-snap-types/validation": "workspace:*",
+    "typescript": "^5.9.3",
+    "wing-snap-types": "workspace:*"
+  }
+}
