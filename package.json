@@ -5,8 +5,8 @@
   "license": "MIT",
   "packageManager": "pnpm@9.9.0",
   "scripts": {
-    "build": "pnpm -r run build",
-    "typecheck": "pnpm -r run typecheck"
+    "build": "pnpm --filter wing-snap-types run build && pnpm --filter @wing-snap-types/parser run build && pnpm --filter @wing-snap-types/validation run build",
+    "typecheck": "pnpm --filter wing-snap-types run build && pnpm --filter wing-snap-types run typecheck && pnpm --filter @wing-snap-types/parser run typecheck && pnpm --filter @wing-snap-types/validation run typecheck"
   },
   "devDependencies": {
     "@wing-snap-types/parser": "workspace:*",
